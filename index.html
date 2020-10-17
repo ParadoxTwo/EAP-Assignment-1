@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+            Assignment 1
+        </title>
+    </head>
+    <body>
+        Read Operation:  <br>
+        <form action='read-api.php' method="GET">
+            <input type="submit" value="Read">
+        </form>
+        Create Operation: <br>
+        <form action='create-api.php' method="GET">
+            <table>
+                <tr>
+                    <td>Student ID: </td><td><input type="number" name="sid"></td>
+                </tr>
+                <tr>
+                    <td>First Name: </td><td><input type="text" name="fname"><br></td>
+                </tr>
+                <tr>
+                    <td>Surname: </td><td><input type="text" name="sname"></td>
+                </tr>
+                <tr>
+                    <td>Email ID: </td><td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="create"></td>
+                </tr>
+            </table>
+        </form>
+        Update Operation: <br>
+        <form action='update-api.php' method="GET">
+            <table>
+                <tr><td colspan="2">Enter the Student ID for the student whose record is to be updated.</td></tr>
+                <tr>
+                    <td>Student ID: </td><td><input type="number" name="updatesid"></td>
+                </tr>
+                <tr><td colspan="2">Enter the details of the new record.</td></tr>
+                <tr>
+                    <td>Student ID: </td><td><input type="number" name="sid"></td>
+                </tr>
+                <tr>
+                    <td>First Name: </td><td><input type="text" name="fname"><br></td>
+                </tr>
+                <tr>
+                    <td>Surname: </td><td><input type="text" name="sname"></td>
+                </tr>
+                <tr>
+                    <td>Email ID: </td><td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="update"></td>
+                </tr>
+            </table>
+        </form>
+        Delete Operation: <br>
+        <form action="delete-api.php" method="GET">
+            Enter the Student ID of the record that needs to be deleted: <br>
+            <input type="number" name="sid"><br>
+            <input type="submit" value="delete">
+        </form>
+    </body>
+</html>
